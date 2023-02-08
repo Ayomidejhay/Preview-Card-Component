@@ -5,9 +5,8 @@
 }
 body{
  background-color: hsl(0, 0%, 95%);
- font-size: 15px;
+ font-size: 1rem;
  min-height: 100vh;
- min-width: 100vw;
  font-family: 'Lexend Deca', sans-serif;
  display: flex;
  flex-direction: column;
@@ -15,10 +14,10 @@ body{
  justify-content: center;
 }
 
-.box-container{
+main{
  display: flex;
  color: hsla(0, 0%, 100%, 0.75);
- width: 900px;
+ max-width: 900px;
  margin-left: auto;
  margin-right: auto;
 }
@@ -34,16 +33,13 @@ h2{
  padding: 50px;
  line-height: 2;
 }
-.button{
- display: flex;
- justify-content: center;
-}
+
 button{
  width: 150px;
  padding:15px 20px;
  margin: 20px 0;
  border-radius: 50px;
- outline: none;
+ outline: 1px;
  border: 1px solid hsl(0, 0%, 95%);
  background-color:hsl(0, 0%, 95%) ;
  transition: ease-in-out 0.5s;
@@ -53,7 +49,7 @@ button{
  border-top-left-radius: 5px;
  border-bottom-left-radius: 5px;
 }
-.sedan-container > .button > button{
+.sedan-container  > button{
  color:hsl(31, 77%, 52%) ;
 }
 button:hover{
@@ -61,13 +57,13 @@ button:hover{
  cursor: pointer;
  transform: translateY(3%);
 }
-.sedan-container > .button > button:hover,.suv-container > .button > button:hover,.luxury-container > .button > button:hover{
+.sedan-container > button:hover,.suv-container > button:hover,.luxury-container > button:hover{
  color:hsl(0, 0%, 95%);
 }
 .suv-container{
  background-color: hsl(184, 100%, 22%);
 }
-.suv-container > .button > button{
+.suv-container > button{
  color:hsl(184, 100%, 22%) ;
 }
 .luxury-container{
@@ -75,7 +71,7 @@ button:hover{
  border-top-right-radius: 5px;
  border-bottom-right-radius: 5px;
 }
-.luxury-container > .button > button{
+.luxury-container > button{
  color:hsl(179, 100%, 13%);
 }
 footer{
@@ -83,8 +79,8 @@ footer{
 }
 
 @media only screen and (max-width:950px){
- .box-container{
-  width: 650px;
+ main{
+  max-width: 650px;
  }
  .containers{
   padding: 50px 15px;
@@ -92,7 +88,7 @@ footer{
 }
 
 @media only screen and (max-width:700px){
- .box-container{
+ main{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +114,7 @@ footer{
 }
 
 @media only screen and (max-width:460px){
- .containers{
+ main{
   width: 300px;
   padding: 50px 50px;
  }
